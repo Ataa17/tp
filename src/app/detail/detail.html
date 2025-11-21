@@ -1,9 +1,13 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link href="rotating-card.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 <div class="card-container">
   <ng-container *ngIf="cv as currentCv; else noCvSelected">
     <div class="card">
       <div class="front">
         <div class="cover">
-          <img [src]="currentCv.path || 'assets/images/rotating_card_thumb3.png'" 
+          <img [src]="'images/rotating_card_thumb3.png'" 
                alt="Card Cover Image"/>
         </div>
         <div class="user">
