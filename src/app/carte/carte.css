@@ -1,0 +1,85 @@
+.container {
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center ;
+  gap: 40px;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+
+
+/* Front side styling */
+.front {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Back side styling */
+.back {
+  background-color: #f8f8f8;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Profile image */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit:cover;
+  margin-bottom: -20px;
+}
+
+.job {
+  font-weight: bold;
+  color: #666;
+}
+
+.citation {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form input {
+  padding: 6px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+.banner {
+  width: 100%;
+  height: 150px;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+ 
+}

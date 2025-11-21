@@ -1,0 +1,9 @@
+<li class="list-group-item" (click)="selectItem()" style="cursor: pointer;">
+  <img 
+    [src]="cv.path" 
+    [alt]="cv.firstname + ' ' + cv.name"
+    class="avatar-small"
+    width="50"
+    height="50">
+  <strong>{{ cv.firstname }} {{ cv.name }}</strong> - {{ cv.Job }}
+</li>

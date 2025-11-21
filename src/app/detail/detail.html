@@ -1,0 +1,69 @@
+<div class="card-container">
+  <ng-container *ngIf="cv as currentCv; else noCvSelected">
+    <div class="card">
+      <div class="front">
+        <div class="cover">
+          <img [src]="currentCv.path || 'assets/images/rotating_card_thumb3.png'" 
+               alt="Card Cover Image"/>
+        </div>
+        <div class="user">
+          <img class="img-circle" 
+               [src]="currentCv.path || 'assets/images/rotating_card_profile.png'" 
+               [attr.alt]="currentCv.firstname + ' ' + currentCv.name + ' profile'"/>
+        </div>
+        <div class="content">
+          <div class="main">
+            <h3 class="name">{{ currentCv.firstname }} {{ currentCv.name }}</h3>
+            <p class="profession">{{ currentCv.Job }}</p>
+            <p class="text-center">"Currently working as a {{ currentCv.Job }} and looking for new opportunities."</p>
+          </div>
+          <div class="footer">
+            <div class="rating">
+              <i class="fa fa-mail-forward"></i> Auto Rotation
+            </div>
+          </div>
+        </div>
+      </div> <!-- end front panel -->
+      
+      <div class="back">
+        <div class="header">
+          <h5 class="motto">"Professional CV for {{ currentCv.firstname }} {{ currentCv.name }}"</h5>
+        </div>
+        <div class="content">
+          <div class="main">
+            <h4 class="text-center">Personal Information</h4>
+            <p class="text-center">CIN: {{ currentCv.Cin }} | Age: {{ currentCv.Age }} years</p>
+
+            <div class="stats-container">
+              <div class="stats">
+                <h4>{{ currentCv.Age }}</h4>
+                <p>Age</p>
+              </div>
+              <div class="stats">
+                <h4>{{ currentCv.Cin }}</h4>
+                <p>CIN</p>
+              </div>
+              <div class="stats">
+                <h4>{{ currentCv.id }}</h4>
+                <p>ID</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="social-links text-center">
+            <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+          </div>
+        </div>
+      </div> <!-- end back panel -->
+    </div> <!-- end card -->
+  </ng-container>
+
+  <ng-template #noCvSelected>
+    <div class="placeholder-card">
+      <h3>👈 Please select a CV from the list to see the details.</h3>
+    </div>
+  </ng-template>
+</div>

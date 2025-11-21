@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0; /* Light background for the page */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Main container using CSS Grid for the 3x2 layout */
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 10px; /* Space between the items */
+width: 100%;    background-color: #fff; /* White background for the calculator area */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the input groups (top row) */
+.input-group {
+    display: flex;
+    flex-direction: column; /* Stack input and label vertically */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 5px;
+    box-sizing: border-box; /* Include padding/border in the element's total width/height */
+    height: 35px; /* Adjust height to look similar */
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px; /* Space between input and label */
+}
+
+/* Style for the result boxes (bottom row) */
+.result-box {
+    padding: 15px 10px;
+    color: #000;
+    text-align: left;
+    height: 50px; /* Adjust height to match the image */
+    box-sizing: border-box;
+
+}
+
+.result-box p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal; /* For the text label */
+}
+
+.result-box p strong {
+    font-weight: bold; /* For the calculated value */
+    /* Note: In your Angular app, the values like $118.00 would be dynamic */
+}
+
+/* Background colors for the result boxes */
+.blue-bg {
+    background-color: #d8edf7; /* Light blue */
+}
+
+.green-bg {
+    background-color: #d9f7d8; /* Light green */
+}
+
+.red-bg {
+    background-color: #f7d8d8; /* Light red/pink */
+}
+.main{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

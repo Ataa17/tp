@@ -1,0 +1,4 @@
+<div [style.background]="color" style="width:200px;height:200px;border:1px solid #000"></div>
+<input type="text" #colorInput [value]="color" placeholder="enter color" (input)="color = colorInput.value">
+<button (click)="applyColor()">Apply</button>
+<app-color-div></app-color-div>

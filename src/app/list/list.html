@@ -1,0 +1,10 @@
+<div class="cv-list">
+  <h2>CV List</h2>
+  <ul class="list-group">
+    <app-item 
+      *ngFor="let cv of cvs" 
+      [cv]="cv"
+      (clickEmitter)="onItemClicked($event)">
+    </app-item>
+  </ul>
+</div>
